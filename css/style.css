@@ -4,11 +4,19 @@
     --light: #F0FBFC;
     --dark: #181d38;
 }
-
+body {
+  background-color: #FDF6E3 !important;
+}
 .fw-medium {
     font-weight: 600 !important;
 }
+.text-gold {
+  color: #E5C07B !important;
+}
 
+.bg-navy {
+    background-color: #040b34;
+}
 .fw-semi-bold {
     font-weight: 700 !important;
 }
@@ -46,7 +54,15 @@
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
+  background-color: #E5C07B;
+  border-color: #E5C07B;
+  color: black;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-secondary:hover {
+  opacity: 0.8; 
 }
 
 .btn-square {
@@ -97,7 +113,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: #E5C07B;
 }
 
 @media (max-width: 991.98px) {
@@ -117,7 +133,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
+    color: #FDF6E3;
     font-weight: 500;
 }
 
@@ -260,7 +276,7 @@
 
 .service-item:hover {
     margin-top: -10px;
-    background: var(--primary);
+    background: #E5C07B;
 }
 
 .service-item * {
@@ -383,7 +399,7 @@
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    color: #E5C07B;
 }
 
 .footer .btn.btn-link {
